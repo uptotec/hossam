@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className="flex w-full h-full">
-      <aside className="p-2 h-screen sticky top-0 w-1/4 border-r-2">
+      <aside className="p-2 h-screen sticky top-0 w-1/4 border-r-2 overflow-y-auto">
         <div className="flex items-center gap-2 pb-4">
           <Image src="/logo.png" width={40} height={40} alt="bue logo" />
           <p className="text-3xl font-bold">Hossam Elnaggar RP</p>
