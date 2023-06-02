@@ -104,8 +104,8 @@ export default function Home() {
             </ComposedChart>
           </ResponsiveContainer>
         </div>
-        <div className="flex flex-col overflow-x-auto items-center justify-center">
-          <table className="w-full text-sm text-left text-gray-500">
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-left text-gray-500 overflow-x-auto">
             <thead className="text-xs text-gray-100 uppercase bg-[#208977]">
               <tr>
                 <th scope="col" className="px-6 py-3">
@@ -185,26 +185,26 @@ export default function Home() {
               )}
             </tbody>
           </table>
-          {data.length === 0 && (
-            <p className="text-lg font-semibold pt-4">
-              Press calculate to show data
-            </p>
-          )}
-          <p className="text-sm pt-4 text-center">
-            &copy; Hossam Elnaggar,
-            <br />
-            The British University in Egypt,
-            <br />
-            Faculty of Energy and Environmental Engineering.
-            <br />
-            <br />
-            supervised by:
-            <br />
-            Dr. Sarah Khalil
-            <br />
-            Dr. Ibrahim Mohammed
-          </p>
         </div>
+        {data.length === 0 && (
+          <p className="text-lg font-semibold pt-4 text-center">
+            Press calculate to show data
+          </p>
+        )}
+        <p className="text-sm pt-4 text-center">
+          &copy; Hossam Elnaggar,
+          <br />
+          The British University in Egypt,
+          <br />
+          Faculty of Energy and Environmental Engineering.
+          <br />
+          <br />
+          supervised by:
+          <br />
+          Dr. Sarah Khalil
+          <br />
+          Dr. Ibrahim Mohammed
+        </p>
       </main>
     </div>
   );
