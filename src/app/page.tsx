@@ -48,8 +48,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex w-full h-full">
-      <aside className="p-2 h-screen sticky top-0 w-1/4 border-r-2 overflow-y-auto">
+    <div className="flex flex-col desktop:flex-row w-full desktop:h-full">
+      <div className="p-2 desktop:h-screen desktop:sticky desktop:top-0 desktop:w-1/4 desktop:border-r-2 desktop:overflow-y-auto">
         <div className="flex items-center gap-2 pb-4">
           <Image src="/logo.png" width={40} height={40} alt="bue logo" />
           <p className="text-3xl font-bold">Hossam Elnaggar RP</p>
@@ -76,8 +76,8 @@ export default function Home() {
             <BsLinkedin size={24} color="#208977" />
           </a>
         </div>
-      </aside>
-      <main className="w-3/4 p-4">
+      </div>
+      <main className="desktop:w-3/4 p-4">
         <div className="mb-4">
           <ResponsiveContainer width="100%" height={500}>
             <ComposedChart data={data} margin={{ top: 20, left: 20 }}>
